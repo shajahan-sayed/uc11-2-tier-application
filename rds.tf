@@ -20,7 +20,7 @@ resource "aws_db_instance" "db_instance" {
   db_name = "testdb"
   publicly_accessible    = false
   db_subnet_group_name = aws_db_subnet_group.two_tier_db.name
-  vpc_security_group_ids = [aws_vpc_security.rds_two.id]
+  vpc_security_group_ids = [aws_security_group.rds_two.id]
   
    # Ensure deletion without final snapshot
   skip_final_snapshot    = true
