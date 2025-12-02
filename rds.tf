@@ -12,7 +12,7 @@ resource "aws_db_subnet_group" "two_tier_db" {
 }
 
 resource "aws_db_instance" "db_instance" {
-  engine = "MYSQL"
+  engine = "mysql"
   allocated_storage = 20
   username = var.username
   password = var.password
