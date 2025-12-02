@@ -27,10 +27,10 @@ variable "private2_cidr" {
     type = string
 }
 
-variable "availability_zone1" {
+variable "availability_zone11" {
   type = string
 }
-variable "availability_zone2" {
+variable "availability_zone22" {
   type = string
 }
 
