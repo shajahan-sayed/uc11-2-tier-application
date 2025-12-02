@@ -20,6 +20,9 @@ variable "vpc_cidr" {
 variable "public1_cidr" {
     type = string
 }
+variable "public2_cidr" {
+    type = string
+}
 variable "private1_cidr" {
     type = string
 }
